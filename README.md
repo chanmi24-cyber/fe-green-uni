@@ -1,44 +1,70 @@
-# green-uni-vue
+# 그린대학교 학사 시스템 FE (Green University Academic System)
 
-This template should help get you started developing with Vue 3 in Vite.
+> 대학교 학사 관리 프론트엔드 시스템 - 1차 프로젝트
 
-## Recommended IDE Setup
+<br>
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 프로젝트 소개
 
-## Recommended Browser Setup
+대학교 학사 업무(강의 개설, 승인, 수강신청, 출석, 성적 등)를 MA(Monolithic Architecture)로 구현한 프론트엔드 프로젝트입니다.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+<br>
 
-## Customize configuration
+## 개발 기간
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- 2026.03.10 ~ 2026.03.26 (약 2주간)
 
-## Project Setup
+- 팀원 4명
 
-```sh
-npm install
-```
+<br>
 
-### Compile and Hot-Reload for Development
+## 기술 스택
 
-```sh
-npm run dev
-```
+| 분류 | 기술 |
 
-### Compile and Minify for Production
+|------|------|
 
-```sh
-npm run build
-```
+| Language | JavaScript |
 
-### Lint with [ESLint](https://eslint.org/)
+| Framework | Vue 3 |
 
-```sh
-npm run lint
-```
+| Build Tool | Vite |
+
+| 상태관리 | Pinia |
+
+| 라우팅 | Vue Router |
+
+| HTTP 통신 | Axios |
+
+<br>
+
+## 내가 맡은 파트
+
+### 강의 목록 페이지
+
+- 전체 강의 목록 - 승인된 강의만 조회
+
+- 교수/학생 역할에 따라 분기 처리하여 각기 다른 강의 목록 렌더링
+
+  - 교수: 내가 개설한 강의를 승인 상태(대기/승인/반려)별로 조회
+
+  - 학생: 내가 수강신청한 강의 조회
+
+### 강의 개설 페이지
+
+- 교수가 강의 정보(강의명, 학점, 정원, 강의실 등)를 등록하는 폼 구현
+
+- 강의 시간 및 강의실 중복 시 예외 처리
+
+### 강의 승인 관리 페이지 (관리자)
+
+- 모든 교수의 개설 강의를 전체/대기/승인/반려별로 조회
+
+- 강의 개설 요청 승인/반려 처리 기능
+
+<br>
+
+## 레포지토리
+
+> 백엔드 레포지토리: [be-green-uni](https://github.com/chanmi24-cyber/be-green-uni)
+
