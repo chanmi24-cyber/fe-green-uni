@@ -19,21 +19,13 @@
 <br>
 
 ## 기술 스택
-
 | 분류 | 기술 |
-
 |------|------|
-
 | Language | JavaScript |
-
 | Framework | Vue 3 |
-
 | Build Tool | Vite |
-
 | 상태관리 | Pinia |
-
 | 라우팅 | Vue Router |
-
 | HTTP 통신 | Axios |
 
 <br>
